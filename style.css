@@ -1,0 +1,123 @@
+:root {
+    --color-btn-hover: #457DD1;
+    --color-btn-text: #363636;
+    --color-btn-border: #c9c9c9;
+    --color-yellow: #F7F60E;
+    --color-orange: #E98402; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-btn-text);
+}
+
+.group-btn {
+    margin: 10px 20px;
+}
+
+.group-btn > *  {
+    margin-left: 10px;
+    cursor: default;
+}
+
+.btn {
+    padding: 2px 8px;
+    text-align: center;
+    border: 1px solid var(--color-btn-border);
+    transition: all .2s ease-in;
+}
+
+.btn:hover {
+    border: 4px solid var(--color-btn-hover);
+    border-radius: 5px;
+}
+
+.wrapper {
+    margin-top: 40px;
+    margin-left: 110px;
+    width: max-content;
+}
+
+
+.box-text {  
+    background-color: var(--color-yellow);
+}
+
+
+.bg {
+    position: relative;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: max-content;
+}
+
+.bg-yellow {
+
+    color: var(--color-orange);     
+    background-color: var(--color-yellow);
+}
+
+
+.bg-orange {
+    background-color: var(--color-orange);
+    color: var(--color-yellow);
+    width: 0;
+}
+.posEL {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.newEL {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    max-width: max-content;
+    white-space: nowrap;
+    background-color: #eee;
+    color: transparent;
+}
+
+.row2 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    max-width: max-content;
+}
+
+.row3 {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    max-width: max-content;
+}
+
+@keyframes text {
+    0% {
+        width: 0%;      
+    }
+
+    100% {
+        width: 100%;      
+    }
+}
+
+
